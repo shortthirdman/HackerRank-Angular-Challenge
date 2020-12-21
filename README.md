@@ -1,8 +1,10 @@
+<a href="https://angular.io" alt="Angular" target="_blank" title="Angular">
+  <img align="center" src="https://github.com/actions/starter-workflows/blob/main/icons/angular.svg" />
+</a>
+
 # HackerRank Angular Challenge
 
-[![Love Angular badge](https://img.shields.io/badge/angular-love-blue?logo=angular&angular=love)](https://www.github.com/shortthirdman/HackerRank-Angular-Challenge)	[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)	
-
-![GitHub pull requests](https://img.shields.io/github/issues-pr/shortthirdman/HackerRank-Angular-Challenge)	![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/shortthirdman/HackerRank-Angular-Challenge)
+[![Love Angular badge](https://img.shields.io/badge/angular-love-blue?logo=angular&angular=love)](https://www.github.com/shortthirdman/HackerRank-Angular-Challenge)	[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)	[![GitHub pull requests](https://img.shields.io/github/issues-pr/shortthirdman/HackerRank-Angular-Challenge)](https://github.com/shortthirdman/HackerRank-Angular-Challenge/pulls)	[![GitHub issues](https://img.shields.io/github/issues/shortthirdman/HackerRank-Angular-Challenge)](https://github.com/shortthirdman/HackerRank-Angular-Challenge/issues)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
