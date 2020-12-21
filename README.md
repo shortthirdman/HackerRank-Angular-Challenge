@@ -1,5 +1,8 @@
-<a href="https://angular.io" alt="Angular" target="_blank" title="Angular">
+<a href="https://angular.io/" alt="Angular" target="_blank" title="Angular">
   <img align="center" src="https://github.com/actions/starter-workflows/blob/main/icons/angular.svg" />
+</a>
+<a href="http://www.protractortest.org/" alt="Protractor" target="_blank" title="Protractor">
+  <img align="center" src="https://www.vectorlogo.zone/logos/protractortest/protractortest-icon.svg" />
 </a>
 
 # HackerRank Angular Challenge
