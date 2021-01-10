@@ -1,1 +1,16 @@
-<p>temperature-converter works!</p>
+<div class="container">
+	<h2>Temperature Converter</h2>
+	<div class="input-group mb-3">
+		<input type="number" inputmode="number" [(ngModel)]="celsiusValue" (input)="onInputChange($event)" class="form-control" aria-label="Temperature (C)" aria-describedby="basic-addon1">
+		<div class="input-group-append">
+			<span class="input-group-text" id="basic-addon1">°C</span>
+		</div>
+	</div>
+	
+	<div class="input-group mb-3">
+		<input type="number" readonly="true" imputmode="number" [(ngModel)]="farenheitValue" class="form-control" aria-label="Temperature (F)" aria-describedby="basic-addon2">
+		<div class="input-group-append">
+			<span class="input-group-text" id="basic-addon2">°F</span>
+		</div>
+	</div>
+</div>

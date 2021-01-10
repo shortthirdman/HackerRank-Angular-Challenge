@@ -15,5 +15,11 @@ export class TemperatureConverterComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  onInputChange(event: any) {}
+  onInputChange(event: any) {
+	console.log(this.celsiusValue);
+	if (this.celsiusValue) {
+		let convertedValue = (this.celsiusValue * 9/5) + 32;
+		this.farenheitValue = Number(convertedValue.toFixed(2));
+	}
+  }
 }

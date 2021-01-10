@@ -1,23 +1,42 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
-import { OpenWeatherFinderComponent } from './openweather-finder/openweather-finder.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule, routeComponents } from './app-routing.module';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+import { HackerRankService } from './shared/services/hacker-rank.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TemperatureConverterComponent,
-    OpenWeatherFinderComponent,
-    WelcomeComponent
+    routeComponents
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+	BrowserAnimationsModule,
+	FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+	SharedModule,
+	AppRoutingModule,
+	FontAwesomeModule
   ],
-  providers: [],
+  providers: [HackerRankService],
   bootstrap: [AppComponent],
-  exports: [TemperatureConverterComponent, OpenWeatherFinderComponent, WelcomeComponent]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {
+
+	constructor(library: FaIconLibrary) {
+		library.addIconPacks(fas, far, fab);
+	}
+}
