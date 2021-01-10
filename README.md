@@ -9,7 +9,11 @@
 
 [![Love Angular badge](https://img.shields.io/badge/angular-love-blue?logo=angular&angular=love)](https://www.github.com/shortthirdman/HackerRank-Angular-Challenge)	[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)	[![GitHub pull requests](https://img.shields.io/github/issues-pr/shortthirdman/HackerRank-Angular-Challenge)](https://github.com/shortthirdman/HackerRank-Angular-Challenge/pulls)	[![GitHub issues](https://img.shields.io/github/issues/shortthirdman/HackerRank-Angular-Challenge)](https://github.com/shortthirdman/HackerRank-Angular-Challenge/issues)
 
+![Node.js CI](https://github.com/shortthirdman/HackerRank-Angular-Challenge/workflows/Node.js%20CI/badge.svg)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+
+This application project has the solutions for challenges in [HackerRank](https://www.hackerrank.com/) for [Angular](https://angular.io/)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/shortthirdman/HackerRank-Angular-Challenge)
 
