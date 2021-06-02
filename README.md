@@ -11,6 +11,8 @@
 
 ![Node.js CI](https://github.com/shortthirdman/HackerRank-Angular-Challenge/workflows/Node.js%20CI/badge.svg)
 
+![Weekly GitHub commit activity](https://img.shields.io/github/commit-activity/w/shortthirdman/HackerRank-Angular-Challenge)	![Monthly GitHub commit activity](https://img.shields.io/github/commit-activity/m/shortthirdman/HackerRank-Angular-Challenge)	![Yearly GitHub commit activity](https://img.shields.io/github/commit-activity/y/shortthirdman/HackerRank-Angular-Challenge)	![GitHub last commit](https://img.shields.io/github/last-commit/shortthirdman/HackerRank-Angular-Challenge)		![GitHub contributors](https://img.shields.io/github/contributors/shortthirdman/HackerRank-Angular-Challenge)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
 This application project has the solutions for challenges in [HackerRank](https://www.hackerrank.com/) for [Angular](https://angular.io/)
