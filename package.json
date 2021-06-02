@@ -10,6 +10,21 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "homepage": "https://shortthirdman.github.io/HackerRank-Angular-Challenge",
+  "readme": "https://github.com/shortthirdman/HackerRank-Angular-Challenge#readme",
+  "bugs": {
+    "url": "https://github.com/shortthirdman/HackerRank-Angular-Challenge/issues"
+  },
+  "author": "Swetank Mohanty <swetank.mohanty@outlook.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 12.*",
+    "npm": ">= 6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shortthirdman/HackerRank-Angular-Challenge.git"
+  },
   "dependencies": {
     "@angular/animations": "~10.1.5",
     "@angular/common": "~10.1.5",
