@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+import { PackageSearchResults } from '../models/package-search';
+
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json',
@@ -16,6 +18,10 @@ export class HackerRankService {
   private cacheStorage: Map<string, string> = new Map<string, string>();
 
   constructor(private http: HttpClient) { }
+  
+  getPackages(query: string) {
+	return this.http.get<PackageSearchResults>('https://api.npms.io/v2/search?q=scope:angular');
+  }
   
   setCacheStorage(key: string, data: any) {
     this.cacheStorage.set(key, JSON.stringify(data));

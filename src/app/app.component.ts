@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,16 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class AppComponent implements OnInit, OnDestroy {
   links: any[];
 
-  constructor() {}
+  constructor(private primengConfig: PrimeNGConfig) {
+  }
 
   ngOnInit(): void {
+	this.primengConfig.ripple = true;
 	this.links = [
 		{ route: 'welcome', label: 'Welcome' },
 		{ route: 'weather', label: 'OpenWeather' },
-		{ route: 'converter', label: 'Temperature Converter' }
+		{ route: 'converter', label: 'Temperature Converter' },
+		{ route: 'package-search', label: 'Package Search' }
 	];
   }
   

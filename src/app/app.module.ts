@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule, DatePipe } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import { HackerRankService } from './shared/services/hacker-rank.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,14 +25,17 @@ import { HackerRankService } from './shared/services/hacker-rank.service';
   imports: [
     BrowserModule,
 	BrowserAnimationsModule,
+	CommonModule,
 	FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+
+	FontAwesomeModule,
+
 	SharedModule,
-	AppRoutingModule,
-	FontAwesomeModule
+	AppRoutingModule
   ],
-  providers: [HackerRankService],
+  providers: [HackerRankService, DatePipe],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
