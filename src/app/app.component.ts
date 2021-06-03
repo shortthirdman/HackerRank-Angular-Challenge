@@ -16,8 +16,8 @@ export class AppComponent implements OnInit, OnDestroy {
 	this.primengConfig.ripple = true;
 	this.links = [
 		{ route: 'welcome', label: 'Welcome' },
-		{ route: 'weather', label: 'OpenWeather' },
-		{ route: 'converter', label: 'Temperature Converter' },
+		{ route: 'weather-finder', label: 'OpenWeather' },
+		{ route: 'temperature-converter', label: 'Temperature Converter' },
 		{ route: 'package-search', label: 'Package Search' }
 	];
   }

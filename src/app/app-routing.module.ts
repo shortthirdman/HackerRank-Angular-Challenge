@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: 'welcome', component: WelcomeComponent, data: { title: 'Welcome' } },
   { path: 'temperature-converter', component: TemperatureConverterComponent, data: { title: 'Temperature Converter' } },
-  { path: 'weather', component: OpenWeatherFinderComponent, data: { title: 'OpenWeather Finder' } },
+  { path: 'weather-finder', component: OpenWeatherFinderComponent, data: { title: 'OpenWeather Finder' } },
   { path: 'package-search', component: PackageSearchComponent, data: { title: 'NPM Package Search' } }
 ];
 

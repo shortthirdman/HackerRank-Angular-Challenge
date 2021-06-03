@@ -1,16 +1,24 @@
 <div class="container">
 	<h2>Temperature Converter</h2>
-	<div class="input-group mb-3">
-		<input type="number" inputmode="number" [(ngModel)]="celsiusValue" (input)="onInputChange($event)" class="form-control" aria-label="Temperature (C)" aria-describedby="basic-addon1">
-		<div class="input-group-append">
-			<span class="input-group-text" id="basic-addon1">°C</span>
+
+	<div class="row mb-2">
+		<div class="col-3">
+			Specify temperature :
+			<p-inputNumber [(ngModel)]="tempValue" mode="decimal" [maxFractionDigits]="2" [minFractionDigits]="2" suffix="{{ selectedUnitSuffix }}"></p-inputNumber>
+		</div>
+		<div class="col-3">
+			Select units :
+			<p-selectButton [options]="tempUnits" [(ngModel)]="selectedTempUnit" optionLabel="name" optionValue="value" (onOptionClick)="emitSuffix($event)"></p-selectButton>
+		</div>
+		<div class="col-3">
+			<button pButton pRipple type="button" label="Submit" class="p-button-raised" (click)="convertTemp()"></button>
+		</div>
+		<div class="col-3">
+			<button pButton pRipple type="button" label="Clear" class="p-button-raised p-button-secondary" (click)="clearValues()"></button>
 		</div>
 	</div>
 	
-	<div class="input-group mb-3">
-		<input type="number" readonly="true" imputmode="number" [(ngModel)]="farenheitValue" class="form-control" aria-label="Temperature (F)" aria-describedby="basic-addon2">
-		<div class="input-group-append">
-			<span class="input-group-text" id="basic-addon2">°F</span>
-		</div>
+	<div class="row mb-2" *ngIf="convertedValue">
+		{{ convertedValue }} {{ convertedUnit }}
 	</div>
 </div>
