@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'temperature-converter', component: TemperatureConverterComponent, data: { title: 'Temperature Converter' } },
   { path: 'weather-finder', component: OpenWeatherFinderComponent, data: { title: 'OpenWeather Finder' } },
   { path: 'package-search', component: PackageSearchComponent, data: { title: 'NPM Package Search' } },
-  { path: 'currency-converter', component: CurrencyConverterComponent, data: { title: 'Currency Converter' } },
+  { path: 'currency-converter', component: CurrencyConverterComponent, data: { title: 'Currency Conversion' } }
 ];
 
 @NgModule({
