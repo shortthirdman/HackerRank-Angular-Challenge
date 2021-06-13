@@ -7,6 +7,7 @@ import { PrimeNGConfig } from 'primeng/api';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
+
   links: any[];
 
   constructor(private primengConfig: PrimeNGConfig) {
@@ -18,7 +19,8 @@ export class AppComponent implements OnInit, OnDestroy {
 		{ route: 'welcome', label: 'Welcome' },
 		{ route: 'weather-finder', label: 'OpenWeather' },
 		{ route: 'temperature-converter', label: 'Temperature Converter' },
-		{ route: 'package-search', label: 'Package Search' }
+		{ route: 'package-search', label: 'Package Search' },
+		{ route: 'currency-converter', label: 'Currency Conversion' }
 	];
   }
   
