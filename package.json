@@ -1,6 +1,7 @@
 {
-  "name": "hacker-rank-angular",
-  "version": "0.0.0",
+  "name": "hackerrank-angular-challenge",
+  "description": "HackerRank Angular Challenge",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,7 +13,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-	"analyze": "npm-run-all clean build:analyze build:wba",
   },
   "keywords": [
     "hacker-rank",
