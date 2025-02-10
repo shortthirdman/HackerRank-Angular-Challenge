@@ -21,6 +21,15 @@ This application project has the solutions for challenges in [HackerRank](https:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/shortthirdman/HackerRank-Angular-Challenge)
 
+### Open in codespaces 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/shortthirdman/HackerRank-Angular-Challenge)
+
+###  Open in Codeanywhere
+
+ [![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/shortthirdman/HackerRank-Angular-Challenge)
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
